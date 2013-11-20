@@ -1,0 +1,93 @@
+Texture tile1
+{
+ filename="fly/tile01.png"
+}
+
+Texture tile2
+{
+ filename="fly/tile02.png"
+}
+
+Sprite tile1
+{
+ texture = tile1
+ rect = 0, 0, 512, 512
+ hotspot = 255, 255
+}
+
+Sprite tile2
+{
+ texture = tile2
+ rect = 0, 0, 512, 512
+ hotspot = 255, 255
+}
+
+Sprite tile3
+{
+ texture = tile1
+ rect = 0, 0, 512, 512
+ hotspot = 255, 255
+}
+
+Texture machine
+{
+ filename="fly/machine03.png"
+}
+
+Animation machine.door
+{
+ texture = machine
+ rect = 0, 0, 1024, 1024
+ frames=6
+ fps=6.0
+ mode=FORWARD,NOLOOP
+ hotspot = 511, 511
+}
+
+Animation machine.rotor
+{
+ texture = machine
+ rect = 0, 1024, 1024, 1024
+ frames=7
+ fps=7.0
+ mode=FORWARD,LOOP
+ hotspot = 511, 511
+}
+
+Sprite machine
+{
+ texture = machine
+ rect = 0, 0, 1024, 1024
+ hotspot = 511, 511
+}
+
+
+Font font
+{
+ filename="fly/font.fnt"
+}
+
+StringTable levels
+{
+ filename=fly/levels.txt
+}
+
+Sound crash 
+{
+ filename=fly/crash.wav
+}
+
+Sound rotor1
+{
+ filename=fly/rotor2.wav
+}
+
+Sound start
+{
+ filename=fly/start.wav
+}
+
+Sound stop
+{
+ filename=fly/stop.wav
+}
