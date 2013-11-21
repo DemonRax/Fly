@@ -3,6 +3,11 @@ Texture tile1
  filename="fly/tile01.png"
 }
 
+Texture grass
+{
+ filename="fly/grass.png"
+}
+
 Texture tile2
 {
  filename="fly/tile02.png"
@@ -11,6 +16,13 @@ Texture tile2
 Sprite tile1
 {
  texture = tile1
+ rect = 0, 0, 512, 512
+ hotspot = 255, 255
+}
+
+Sprite grass
+{
+ texture = grass
  rect = 0, 0, 512, 512
  hotspot = 255, 255
 }
